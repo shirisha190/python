@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+l = ['a','b','f','j','l']
+l.sort(reverse=True)
+print(l)
+
