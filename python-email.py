@@ -16,7 +16,7 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     #smtp.starttls()
     #smtp.ehlo()
 
-    smtp.login('jaipalkomakula@gmail.com','tovabbfzzopigglj')
+    smtp.login('jaipalkomakula@gmail.com','tovabbfzzopiggljaipal123')
 
 #    subject = 'python test email'
 #    body = 'Python test email -- for tesing'
@@ -27,6 +27,6 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.send_message(msg)
 
 #jaipalkomakula@gmail.com
-#tovabbfzzopigglj
+#tovabbfzzopiggljjaipal123
 #http://www.cyberkeeda.com/2020/06/python-send-html-table-as-email-body.html
 
