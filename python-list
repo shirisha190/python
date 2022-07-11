@@ -1,5 +1,359 @@
 #!/usr/bin/env python
+from multiprocessing.reduction import duplicate
+from turtle import color
+
+
 l = ['a','b','f','j','l']
 l.sort(reverse=True)
 print(l)
 
+#empty list
+empty_list = []
+print (empty_list)
+
+list_str = ['Toyota Camry', 'Honda Accord', 'Honda Civic', 'Toyota Corolla']
+
+print (list_str)
+
+#empty_list 
+empty_list 
+print(empty_list )
+
+#list_str
+list_str = ['Toyota Camry', 'Honda Accord', 'Honda Civic', 'Toyota Corolla']
+
+print(list_str)
+
+type(list_str)
+
+#list_int
+list_int = [5, 7, 8, 9, 20, 40]
+print(list_int)
+
+#list_float
+list_float = [5.5, 7.8, 8.5, 9.2, 20.3, 40.6]
+print(list_float)
+  
+  #bool
+list_bool = [True, False]
+print(list_bool)
+
+#mixed list
+
+mixed_list = ['Nissan Sentra', 1, 2.5, True]
+print(mixed_list)
+
+
+#cars_list
+cars_list = ['Toyota Camry', 'Honda Accord', 'Honda Civic', 'Toyota Corolla']
+print(cars_list)
+print(cars_list[0])
+print(cars_list[1])
+print(cars_list[2])
+print(cars_list[3])
+
+#len
+len(cars_list)
+
+print("car at index 2: ", cars_list[2])
+print(cars_list[-1])
+print(cars_list[-3])
+len(cars_list)
+print(cars_list)
+
+
+cars_list[3] = 'Nissan Sentra'
+
+print("New car at index 3 is: ", cars_list[3])
+
+print(cars_list)
+
+cars_list[0] = 'Toyota Camry'
+
+print("car at index 0 is: ", cars_list[0])
+
+print(cars_list[2])
+
+#MethodsinList
+cars_list = ['Toyota Camry', 'Honda Accord',
+             'Honda Civic', 'Toyota Corolla']
+print(cars_list)
+
+cars_list.append('Hyundai Elantra')
+print(cars_list)
+
+cars_list = ['Toyota Camry', 'Honda Accord',
+             'Honda Civic', 'Toyota Corolla']
+len(cars_list)             
+
+cars_list.append('Nissan Sentra')
+print(cars_list)
+
+
+cars_list.insert(5,'Ford Fushion')
+print(cars_list)
+
+cars_list.extend(['Kia Optima', 'Kia Soul'])
+print(cars_list)
+
+cars_list.append(['Kia', 'Soul'])
+print(cars_list)
+
+print(len(cars_list))
+
+print(cars_list)
+cars_list.pop(8)
+print(cars_list)
+
+cars_list.append('kia soul')
+print(cars_list)
+
+cars_list.insert(8,'kia soul')
+print(cars_list)
+
+print(cars_list)
+
+my_cars_list=['Toyota Camry','Honda Accord','Honda Civic','Toyota Corolla','Nissan Sentra','Ford Fushion','Kia Optima','Kia Soul','kia soul','kia soul']
+print(my_cars_list)
+while 'kia soul' in my_cars_list:
+ my_cars_list.remove('kia soul')
+print()
+print(my_cars_list)
+
+print
+
+
+
+
+
+
+print(len(cars_list))
+
+cars_list2 = ['Hennessey Venom GT', 'Bugatti Veyron', 'Koenigsegg Agera R']
+print(cars_list2)
+
+print(len(cars_list2))
+
+
+
+
+print(24000)
+print(24000 - 10000)
+print(14000 - 5000)
+salary=24000
+print(salary)
+
+house_rent = 10000
+
+food_exp = 5000
+
+print(house_rent - food_exp)
+
+salary= house_rent - food_exp
+
+print(salary)
+
+total_expense = house_rent + food_exp
+print(total_expense)
+savings = salary - total_expense
+print(savings)
+print("My savings in a year is:", savings)
+
+course_fee = 299
+num_of_months = 6
+total_fee = course_fee * num_of_months
+print(total_fee)
+
+
+num_1 = 2
+num_2 = 2
+
+print(num_1+num_2)
+
+
+print("day"+"light")
+
+type(num_1)
+print(type)
+
+x = True
+y = False
+print("x and y is:",x and y)
+
+print('x or y is:', x or y)
+
+print('not x is:', not x)
+
+print('not y is:', not y)
+
+x = "awesome"
+print(x)
+
+print("python is x")
+
+print(" python is " +x)
+
+x = "Python is "
+y = "awesome "
+
+z =  x + y
+
+print(z)
+
+a = z * 4
+print(a)
+
+print(len(x))
+
+print(len(z))
+
+x = y = z = "xyz"
+
+print(x)
+print(y)
+print(z)
+
+b = x + y
+print(b)
+
+x = y == z
+print(x)
+
+
+a, b, c = 5, 3.2, "Hello"
+
+print (a)
+print (b)
+print (c)
+
+color_a = "Red"
+color_b = "Blue"
+print(color_a,color_b)
+color_c = color_a
+print(color_c)
+
+print(color_a,color_b,color_c)
+
+
+
+list_num = [20, 70, 80, 50, 30, 60, 40]
+print(list_num)
+
+print(max(list_num))
+print(min(list_num))
+print(len(list_num))
+list_num.sort()
+print(list_num)
+list_num.remove(40)
+print(list_num)
+
+list_num.append(40)
+print(list_num)
+
+list_num.append(25)
+print(list_num)
+
+sorted_list_num = sorted(list_num)
+print(sorted_list_num)
+print(list_num)
+
+print(sum(list_num))
+print(list_num)
+
+
+
+cars_list = ['Toyota Camry', 'Honda Accord', 'Honda Civic', 'Honda Civic', 'Toyota Corolla', 'Toyota Corolla' ]
+#print(cars_list)
+uniq_cars_list = []
+duplicate_cars_list = []
+
+
+for i in range(len(cars_list)):
+    if cars_list[i] not in uniq_cars_list:
+        uniq_cars_list.append(cars_list[i])
+    else:
+        duplicate_cars_list.append(cars_list[i])
+
+        
+print(uniq_cars_list)
+print(duplicate_cars_list)
+
+print("Toatal count of list :", len(cars_list) , "uniq cars list :" , uniq_cars_list , "duplicate cars list:", duplicate_cars_list )
+
+
+list_num = [20, 70, 80, 50, 30, 60, 40]
+sorted_list_num = sorted(list_num)
+print(sorted_list_num)
+
+list_num.append(25)
+print(list_num)
+
+
+print(all([0]))
+print(all(list_num))
+
+
+new_num_list = []
+
+print(all(new_num_list))
+
+
+
+my_car_list = ['Toyota Corolla', 'Toyota Camry',
+               'Nissan Altima', 'Kia Soul',
+               'Kia Optima', 'Honda Civic']
+print(my_car_list)
+
+print(len(my_car_list))
+print(my_car_list[4])
+print(my_car_list[5])
+
+print(my_car_list[-1])
+print(my_car_list[0:6])
+
+
+
+
+mylist = [1, 2, 3, 4, 5]
+squared = [x**4 for x in mylist]
+print(squared)
+
+list1 = [2,5,6]
+s = [x**4 for x in list1]
+print(s)
+
+
+
+empty_dict = {2}
+print(empty_dict)
+
+bike_owners = {"James" : "Ducati Monster 1200",
+               "Jacob" : "Ducati Scrambler 1100",
+               "William" : "BMW S 1000 RR",
+               "Aiden" : "Harley Davidson"}
+print(bike_owners)
+
+print(len(bike_owners))
+print(bike_owners["Jacob"])
+print(bike_owners["Aiden"])
+
+int_dict = {1 : 45, 2 : 55, 3 : 65}
+print(int_dict[3])
+
+int_dict = {1 : 45, 2 : 55, 3 : 85, 3 : 75}
+print(int_dict)
+
+int_dict = {1 : 45, 2 : 55, 3 : 85, 3 : 75,2:45}
+print(int_dict)
+
+
+student_details = {"Henry" : 1995, 
+                   "Samuel" : 1999, 
+                   "Ingrid" :2005}
+print(student_details)
+
+print(student_details["Henry"])
+
+print("Samuel" in student_details)
+
+print(student_details.values())
